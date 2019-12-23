@@ -25,76 +25,11 @@
         android:textSize="20sp"/>
 
 
-    <EditText
-        android:id="@+id/c4"
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l1"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:hint="S5"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c3"
-        android:layout_alignLeft="@+id/c3"
-        android:layout_alignStart="@+id/c3"
-        android:layout_alignRight="@+id/c3"
-        android:layout_alignEnd="@+id/c3" />
-
-    <EditText
-        android:id="@+id/c5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="S6"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c4"
-        android:layout_alignLeft="@+id/c4"
-        android:layout_alignStart="@+id/c4"
-        android:layout_alignRight="@+id/c4"
-        android:layout_alignEnd="@+id/c4" />
-
-    <EditText
-        android:id="@+id/c7"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:hint="S8"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c6"
-        android:layout_alignLeft="@+id/c5"
-        android:layout_alignStart="@+id/c5"
-        android:layout_alignRight="@+id/c6"
-        android:layout_alignEnd="@+id/c6" />
-
-    <EditText
-        android:id="@+id/c6"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:hint="S7"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c5"
-        android:layout_alignRight="@+id/c5"
-        android:layout_alignEnd="@+id/c5"
-        android:layout_alignLeft="@+id/c5"
-        android:layout_alignStart="@+id/c5" />
-
-    <EditText
-        android:id="@+id/c2"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:hint="S3"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c1"
-        android:layout_alignLeft="@+id/c1"
-        android:layout_alignStart="@+id/c1"
-        android:layout_alignRight="@+id/c1"
-        android:layout_alignEnd="@+id/c1" />
-
-    <EditText
-        android:id="@+id/c1"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:hint="S1S2"
         android:ems="10"
         android:inputType="numberDecimal"
         android:layout_below="@+id/textView2"
@@ -103,22 +38,128 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_alignEnd="@+id/textView2">
 
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="S1" />
         <requestFocus />
-    </EditText>
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/c3"
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l2"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:hint="S4"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:layout_below="@+id/c2"
-        android:layout_alignLeft="@+id/c2"
-        android:layout_alignStart="@+id/c2"
-        android:layout_alignRight="@+id/c2"
-        android:layout_alignEnd="@+id/c2">
-    </EditText>
+        android:layout_below="@+id/l1"
+        android:layout_alignLeft="@+id/l1"
+        android:layout_alignStart="@+id/l1"
+        android:layout_alignRight="@+id/l1"
+        android:layout_alignEnd="@+id/l1">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="S2" />
+l
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/l2"
+        android:layout_alignLeft="@+id/l2"
+        android:layout_alignStart="@+id/l2"
+        android:layout_alignRight="@+id/l2"
+        android:layout_alignEnd="@+id/l2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="S3" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/l3"
+        android:layout_alignLeft="@+id/l3"
+        android:layout_alignStart="@+id/l3"
+        android:layout_alignRight="@+id/l3"
+        android:layout_alignEnd="@+id/l3">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/c4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="S4" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l5"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/l4"
+        android:layout_alignLeft="@+id/l4"
+        android:layout_alignStart="@+id/l4"
+        android:layout_alignRight="@+id/l4"
+        android:layout_alignEnd="@+id/l4">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/c5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="S5" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/l6"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/l5"
+        android:layout_alignRight="@+id/l5"
+        android:layout_alignEnd="@+id/l5"
+        android:layout_alignLeft="@+id/l5"
+        android:layout_alignStart="@+id/l5">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/c6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="S6" />
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/b3"
@@ -127,9 +168,9 @@
         android:text="FIND"
         android:textStyle="bold"
         android:textSize="16dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/green_btn"
         android:textColor="#ffffff"
-        android:layout_below="@+id/c7"
+        android:layout_below="@+id/l6"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
 

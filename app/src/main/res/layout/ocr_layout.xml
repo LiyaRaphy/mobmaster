@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/topLayout"
-    tools:context="com.delaroystudios.teacherassistant.ocr">
+    tools:context="com.example.MobMaster.ocr">
 
     <TextView
         android:id="@+id/textView"

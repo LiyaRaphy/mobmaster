@@ -10,22 +10,30 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp">
 
-        <EditText
-            android:id="@+id/editText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lay1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/fab"
             android:layout_toStartOf="@+id/fab"
-            android:hint="Admission Number"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:hint="Admission Number">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
+            android:layout_alignLeft="@+id/lay1"
+            android:layout_alignStart="@+id/lay1"
+            android:layout_below="@+id/lay1"
             android:layout_marginTop="20dp"
             android:background="#ffffff"
             android:elevation="5dp"
@@ -61,15 +69,16 @@
             android:clickable="true"
             android:elevation="5dp"
             android:src="@drawable/ic_content_add_circle"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:borderWidth="0dp" />
 
         <Button
             android:id="@+id/buttonFind"
             style="?android:attr/buttonStyleSmall"
+            android:background="@drawable/green_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/editText"
+            android:layout_alignBottom="@id/lay1"
             android:layout_alignEnd="@+id/fab"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/fab"

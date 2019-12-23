@@ -20,14 +20,24 @@
             android:layout_height="wrap_content"
             android:weightSum="10"
             android:orientation="horizontal">
-            <EditText
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/register_"
+                android:layout_height="80dp"
                 android:layout_weight="2"
                 android:hint="Admission Number"
                 android:textSize="20sp"
-                android:paddingBottom="5dp" />
+                android:paddingBottom="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/register_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,34 +45,57 @@
                 android:text="LOAD"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/green_btn"
                 android:id="@+id/loadForEdit"
                 />
         </LinearLayout>
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/edit_name_"
+            android:layout_height="80dp"
             android:hint="Name"
             android:textSize="20sp"
-            android:paddingBottom="5dp" />
-        <EditText
+            android:paddingBottom="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_name_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/roll_"
-            android:inputType="numberDecimal"
+            android:layout_height="80dp"
             android:hint="Roll Number"
+            android:inputType="numberDecimal"
             android:textSize="20sp"
-            android:paddingBottom="5dp" />
-        <EditText
+            android:paddingBottom="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/roll_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/contact_"
-            android:inputType="phone"
+            android:layout_height="80dp"
             android:hint="Contact"
             android:textSize="20sp"
-            android:paddingBottom="5dp" />
+            android:paddingBottom="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/contact_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
 
         <Button
             android:layout_width="200dp"
@@ -71,7 +104,7 @@
             android:text="SAVE CHANGES"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/green_btn"
             android:textSize="16dp"
             android:id="@+id/buttonSAVEEDITS"
             android:layout_gravity="center_horizontal" />

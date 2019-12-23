@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.delaroystudios.teacherassistant">
+    package="com.example.MobMaster">
     <uses-sdk android:targetSdkVersion="24" android:minSdkVersion="19"></uses-sdk>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/teacher"
+        android:icon="@mipmap/ic_mobmaster"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".SplashScreen"
+            android:name="com.example.MobMaster.SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,49 +22,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppBase"
-            android:parentActivityName=".SplashScreen">
+            android:name="com.example.MobMaster.AppBase"
+            android:parentActivityName="com.example.MobMaster.SplashScreen">
         </activity>
         <activity
-            android:name=".profile_activity"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.profile_activity"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".Student_Registartion"
-            android:parentActivityName=".profile_activity" />
+            android:name="com.example.MobMaster.Student_Registartion"
+            android:parentActivityName="com.example.MobMaster.profile_activity" />
         <activity
-            android:name=".noteCreate"
-            android:parentActivityName=".noteActivity" />
+            android:name="com.example.MobMaster.noteCreate"
+            android:parentActivityName="com.example.MobMaster.noteActivity" />
         <activity
-            android:name=".attendanceActivity"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.attendanceActivity"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".Result_activity"
-            android:parentActivityName=".cgpa_activity" />
+            android:name="com.example.MobMaster.Result_activity"
+            android:parentActivityName="com.example.MobMaster.cgpa_activity" />
         <activity
-            android:name=".cgpa_activity"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.cgpa_activity"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".noteActivity"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.noteActivity"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".scheduler"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.scheduler"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".make_schedule"
-            android:parentActivityName=".scheduler" />
+            android:name="com.example.MobMaster.make_schedule"
+            android:parentActivityName="com.example.MobMaster.scheduler" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.example.MobMaster.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".AppBase" />
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".About"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.About"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".Edit_Student"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.Edit_Student"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
         <activity
-            android:name=".ocr"
-            android:parentActivityName=".AppBase" />
+            android:name="com.example.MobMaster.ocr"
+            android:parentActivityName="com.example.MobMaster.AppBase" />
     </application>
 
 </manifest>
